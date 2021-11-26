@@ -1,0 +1,106 @@
+:root {
+    --grey: #D0D7DD;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    border-bottom: 1px solid var(--grey);
+    padding: 8px 0;
+}
+
+.subheader {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.section {
+    margin: 16px 0;
+    text-align: center;
+}
+
+.section__label {
+    text-align: center;
+}
+
+.section__arr-fill-inputs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section__arr-fill-inputs > input {
+    height: 48px;
+    max-width: 50px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+    border-radius: 8px;
+    border: 1px solid var(--grey);
+    margin-top: 8px;
+}
+
+.section__arr-fill-inputs > input:not(:last-child) {
+    margin-right: 8px;
+}
+
+.canvas {
+    display: block;
+    margin: 8px auto;
+    width: 570px;
+    height: 200px;
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+}
+
+button {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+    color: grey;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 480px) {
+    .canvas {
+        width: 285px;
+        height: 100px;
+    }
+}

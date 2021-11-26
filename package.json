@@ -1,0 +1,14 @@
+{
+  "name": "animatedsort",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "static-server"
+  },
+  "author": "Lacront",
+  "license": "ISC",
+  "devDependencies": {
+    "static-server": "2.2.1"
+  }
+}
